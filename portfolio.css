@@ -101,9 +101,8 @@ ul a:hover{
    border-radius: 12px;
    cursor: pointer;
    border-color: #eef2f7;
-   
-
 }
+
 .second-btn{ background:#eef2f7;
     color:#3a6fd8;
    padding: 10px 20px;
@@ -113,6 +112,12 @@ ul a:hover{
    
 
 }
+
+    .first-btn a, .second-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .profil{
     display: flex;
     gap: 10px;
@@ -237,15 +242,14 @@ img{
     overflow: hidden;
     padding: 20px 25px;
     
-
-
-}
+    }
 
 
 .projet-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
 .projet-texte h3 {
@@ -326,6 +330,9 @@ img{
    border: none;
 
 }
+.first-btn-Foot a{
+    text-decoration: none;
+}
 .second-btn-Foot{ background:#eef2f7;
     color:#3a6fd8;
    padding: 10px 20px;
@@ -335,6 +342,9 @@ img{
    font-weight: 600;
    cursor: pointer;
    border: none;
+   }
+   .second-btn-Foot a{
+    text-decoration: none;
    }
    .ronds{
     display: flex;
@@ -368,13 +378,19 @@ img{
   }
 
   .hero-right {
-    height: 300px;
+    height: 350px;
+    width: 100%;
     margin: 0;
+    border-radius: 16px;
   }
 
   .photo-profil {
-    width: 260px;
-    height: 280px;
+    width: 280px;
+    height: 320px;
+  }
+  .badge-image {
+    top: 20px;
+    left: 20px;
   }
 
   .apropos {
@@ -429,13 +445,15 @@ img{
   }
 
   .hero-right {
-    height: 260px;
+    height: 300px;
+    width: 100%;
     margin: 0;
+    border-radius: 12px;
   }
 
   .photo-profil {
     width: 220px;
-    height: 240px;
+    height: 260px;
   }
 
   .badge {
@@ -443,6 +461,19 @@ img{
     width: auto;
   }
 
+.badge-image {
+    top: 12px;
+    left: 12px;
+    padding: 8px 12px;
+  }
+
+  .badge-image h1 {
+    font-size: 12px;
+  }
+
+  .badge-image p {
+    font-size: 10px;
+  }
   .hero-left h1 {
     font-size: 28px;
   }
